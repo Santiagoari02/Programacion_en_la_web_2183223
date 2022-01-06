@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        
+        <meta charset="utf-8" />
+
+    </head>
+
+    <body>
+
+        <h2><b>Rellena tu CV</b></h2>
+
+        <form action="https://www.youtube.com/" method="post">
+            Nombre<br>
+            <input type="text" name="nombre" value=""><br><br>
+            Apellidos<br>
+            <input type="text" name="apellidos"value=""><br><br>
+            Contraseña<br>
+            <input type="text" name="contraseña"value=""><br><br>
+            Confirmar Contraseña<br>
+            <input type="text" name="confircontraseña"value=""><br><br>
+            Identificación<br>
+            <select name="select">
+                <option value="CC" selected>CC</option>
+                <option value="TI">TI</option>
+                <option value="CE">CE</option>
+                <input type="text" name="numeroidentificacion"value="">
+            </select><br><br>
+            Sexo<br>
+            <input type="radio" name="sexo" value="hombre" checked="checked">
+            Hombre
+            <br>
+            <input type="radio" name="sexo" value="mujer">
+            Mujer<br><br>
+            Incluir mi Foto<br>
+            <input type="file" name="foto"><br><br>
+            <input name="estudiante" type="checkbox" value="estudiante" checked="checked">
+            Estudiante<br><br>
+            <fieldset>
+                <legend><h3>Datos Personales</h3></legend><br>
+                Departamento<br>
+                <select name="select">
+                    <option value="">--selecciona--</option>
+                    <option value="Amazonas">Amazonas</option>
+                    <option value="Antioquia">Antioquia</option>
+                    <option value="Arauca">Arauca</option>
+                    <option value="Atlántico">Atlántico</option>
+                    <option value="Bolívar">Bolívar</option>
+                </select><br><br>
+                Fecha de Nacimiento<br>
+                <input type="text" name="día" value="">
+                de
+                <select name="select">
+                    <option value="Enero" selected>Enero</option>
+                    <option value="Febrero">Febrero</option>
+                    <option value="Marzo">Marzo</option>
+                    <option value="Abril">Abril</option>
+                    <option value="Mayo">Mayo</option>
+                </select>
+                de
+                <input type="text" name="año" value=""><br><br>
+                <label for="temasDeInteres">Temas de Interés</label><br>
+                <select multiple="multiple" size="3" id="temasDeInteres" name="temasDeInteres">
+                    <option value="1">Administración de Bases de Datos</option>
+                    <option value="2">Análisis y programación</option> 
+                    <option value="3">Arquitectura</option>
+                    <option value="4">Calidad</option>
+                    <option value="5">ERP, CRM, Business intelligence</option>
+                </select><br><br>
+            </fieldset><br>
+            <input type="submit" value="Guardar cambios">
+            <input type="reset" value="Reiniciar el formulario">
+        </form>
+
+    </body>
+
+
+
+
+
+</html>
