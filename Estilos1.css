@@ -1,0 +1,15 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: 110px;
+}
+
+.grid-container div{
+    background-color: white;
+    border: 1px solid black;
+    text-align: center;
+    padding: 2px;
+}
+
+footer{
+    border: 1px solid black;
+}
