@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        
+        <meta charset="utf-8" />
+
+    </head>
+
+    <body>
+
+        <header>
+        <h2><b>REGÍSTRATE</b></h2>
+        </header>
+
+        <section>
+        <form action="https://www.youtube.com/" id="formulario" method="post">
+            <link rel="stylesheet" href="estilos.css">
+
+            <b>id_país</b><br>
+            <select name="select">
+                <option value="Afganistán" selected>1</option>
+                <option value="Albania">2</option>
+                <option value="Alemania">3</option>
+                <option value="Andorra">4</option>
+                <option value="Angola">5</option>
+            </select><br><br>
+            <b>Nombre</b><br>
+            <input type="text" name="nombre"value="" id="nombre"><br><br>
+            <b>Apellido</b><br>
+            <input type="text" name="apellido"value="" id="apellido"><br><br>
+            <b>Dirección</b><br>
+            <input type="text" name="direccion"value="" id="direccion"><br><br>
+            <b>ccusuario</b><br>
+            <input type="text" name="ccusuario"value="" id="ccusuario"><br><br>
+            <b>ccpaswd</b><br>
+            <input type="password" name="ccpaswd"value="" id="password" onkeyup='check();'><br><br>
+            <b>Confirmar paswd</b><br>
+            <input type="password" name="confirmarccpaswd"value="" id="confirmarpassword" onkeyup='check();'><br><br>
+            <b>Email</b><br>
+            <input type="text" name="email" value="" id="email"><br><br>
+            <b>Teléfono</b><br>
+            <input type="text" name="teléfono" value=""><br><br>
+            <input type="radio" id="boton" class="btn btn-danger"><b>Gustos</b><br><br>
+
+            <form action="https://www.youtube.com/" id="gustos">
+                <b>Color favorito</b>
+                <input type="text" name="colorfavorito"value="" id="colorfavorito"><br><br>
+                <b>Marca de carro favorita</b>
+                <input type="text" name="Marca de carro favorita"value="" id="Marca de carro favorita"><br><br>
+                <b>Estilo de carro favorito</b>
+                <input type="text" name="Estilo de carro favorito"value="" id="Estilo de carro favorito"><br><br>
+                <b>Modelo de carro favorito</b>
+                <input type="text" name="Modelo de carro favorito"value="" id="Modelo de carro favorito"><br><br>
+                <b>Pecio máximo (pesos)</b><br>
+                <input type="range" name="rangeInput" min="0" max="100000000" onchange="updateTextInput(this.value);">
+                <input type="text" id="textInput" value="">
+
+            </form>    
+
+            </button>
+            <input type="submit" value="Registrarse"><br><br>
+            <input type="reset" value="Reiniciar el formulario">
+        </form>
+        </section>
+
+        <script src="scripts.js"></script>
+
+    </body>
+
+</html>
