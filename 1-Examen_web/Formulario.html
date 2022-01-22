@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Formulario</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="EstilosFormulario.css">
+    <script src="https://kit.fontawesome.com/3a19cbda72.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <h1><b>WebDeveloper</b></h1><br>
+    <div class="main-block">
+    <h3>Formulario de Afiliación</h3>
+      <form action="/">
+        <input type="text" name="name" id="name" placeholder="Nombre Completo" required >
+        <label id="icon" for="name"><i class="fas fa-user"></i></label>
+        <input type="text" name="name" id="name" placeholder="Email" required/>
+        <label id="icon" for="name"><i class="fas fa-envelope"></i></label>
+        <input type="text" name="name" id="name" placeholder="Teléfono"/>
+        <label id="icon" for="name"><i class="fas fa-phone"></i></label>
+        <input type="text" name="name" id="boton"><button type="button" onclick="">Gustos</button><br><br>
+      </form>
+
+      <div id="div1">
+
+        <aside>        
+          <label id="icon1" for="name"><i class="far fa-flag" id="flag"></i></label>
+        </aside>
+      <form method="POST" action="file:///C:/Users/Santiago02/OneDrive/Documentos/Universidad%20Santiago/7%20Semestre/Programaci%C3%B3n%20en%20la%20Web/Programacion_en_la_web_2183223/Programacion_en_la_web_2183223/1-Examen_web/Resultado.html" id="form1">       
+        <table>
+            <tr>
+                <th>Gusto</th>
+                <th>%</th>
+                <th>Edit</th>
+            </tr>
+            <tr>
+                <td>Gatos</td>
+                <td>0</td>
+                <td onclick="editar(1)" class="editar">Editar</td>
+            </tr>
+            <tr>
+                <td>Perros</td>
+                <td>0</td>
+                <td onclick="editar(2)" class="editar">Editar</td>
+            </tr>
+        </table>
+        <div> </div>
+        <div class="div1"> </div>
+        <div class="div1"> </div><br>
+        <h6>Pulse Aceptar para guardar los cambios o cancelar para anularlos</h6>
+        <input type="submit" value="Aceptar">
+        <input type="reset" value="Cancelar">
+    </form><br><br>
+
+    <form action="https://sites.google.com/view/dweb1-uis/home">
+
+      <input type="submit" id="sitioweb" value="Ir al sitio de P.Web">
+
+    </form>
+
+  </div>
+
+  <script>
+    fila = 0;
+    function editar(numeroFila){
+        var filas = document.getElementsByTagName('tr');
+        fila = fila + (numeroFila/numeroFila);
+
+        if(fila > 1){
+            alert('Solo se puede editar una línea. Recargue la página para poder editar otra');
+        } else {
+            filas[numeroFila].childNodes[1].innerHTML = '<input type="text" name="Alimento">';
+            filas[numeroFila].childNodes[3].innerHTML = '<input type="text" name="Calorias">';
+            filas[numeroFila].childNodes[5].innerHTML = '<input type="text" name="Grasas">';
+            filas[numeroFila].childNodes[7].innerHTML = '<input type="text" name="Proteinas">';
+            filas[numeroFila].childNodes[9].innerHTML = '<input type="text" name="Carbohidratos">';
+            document.getElementsByTagName('tr')[numeroFila].childNodes[11].textContent = 'En edición';
+            document.getElementsByTagName('tr')[numeroFila].childNodes[11].classList.add('enEdicion');
+
+            document.body.getElementsByTagName('div')[0].textContent = 'Pulse Aceptar para guardar los cambios o cancelar para anularlos';
+            document.body.getElementsByTagName('div')[1].innerHTML = '<button type="submit" class="boton" id="aceptar">Aceptar</button>';
+            document.body.getElementsByTagName('div')[2].innerHTML = '<button type="reset" class="boton" id="cancelar" onclick="location.reload()">Cancelar</button>';
+        }
+    }
+</script>
+
+
+
+
+
+  
+  </body>
+
+</html>
