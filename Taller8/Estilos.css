@@ -1,0 +1,169 @@
+      
+div, h1, form, input, p { 
+padding: 0px;
+margin: 0px;
+outline: none;
+font-family: Roboto, Arial, sans-serif;
+font-size: 14px;
+color: #666;
+}
+
+html{
+justify-content:center;
+display: flex;
+}
+
+body{
+  margin:15px;
+  padding-bottom: 15px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url(https://images.pexels.com/photos/691668/pexels-photo-691668.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+}
+h1 {
+padding: 6px 0px;
+padding-top: 32px;
+font-size: 28px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-weight: 300;
+text-align: center;
+color: #1c87c9;
+-webkit-text-stroke: 0.2px black;
+}
+
+p {
+font-size: 12px;
+}
+
+.main-block {
+max-width: 440px; 
+min-height: 990px; 
+margin: 10px;
+border-radius: 5px; 
+border: solid 1px #ccc;
+box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
+background: #f5f5f5; 
+}
+form {
+margin: 0px 30px;
+}
+.account-type, .gender {
+margin: 15px 0;
+}
+input[type=radio] {
+display: none;
+}
+label#icon {
+margin: 0;
+border-radius: 5px 5px 5px 5px;
+width: 10px;
+}
+label#tipodocumento {
+margin: 0;
+border-radius: 5px 5px 5px 5px;
+width: 10px;
+}
+
+input[type=text], input[type=password], textarea[name=comentario], input[name=select]{
+width: calc(100% - 55px);
+height: 36px;
+margin: 13px 0 0 -5px;
+padding-left: 10px; 
+border-radius: 0 5px 5px 0;
+border: solid 1.5px #cbc9c9; 
+box-shadow: 1px 2px 5px rgba(0,0,0,.09); 
+background: rgb(255, 255, 255); 
+}
+
+#tipodocumento{
+width: calc(100% - 43px);
+height: 36px;
+margin: 13px 0 0 -5px;
+padding-left: 10px; 
+border-radius: 0 5px 5px 0;
+border: solid 1px #cbc9c9; 
+box-shadow: 1px 2px 5px rgba(0,0,0,.09); 
+background: #fff; 
+}
+
+#icon {
+display: inline-block;
+padding: 9.3px 15px;
+box-shadow: 1px 2px 5px rgba(0, 0, 0, 0); 
+background: #1c87c9;
+color: #fff;
+text-align: center;
+}
+
+
+.btn-block {
+margin-top: 10px;
+text-align: center;
+}
+button {
+width: 100%;
+padding: 10px 0;
+margin: 10px auto;
+border-radius: 5px; 
+border: none;
+background: #1c87c9; 
+font-size: 14px;
+font-weight: 600;
+color: #fff;
+}
+button:hover {
+background: #26a9e0;
+}
+
+.fas{
+font-size: 10px;
+}
+
+fieldset#caja1{
+  border-color: #1c87c9;
+  border-style: solid;
+  margin-top: -5px;
+}
+
+fieldset#caja2{
+  border-color: #1c87c9;
+  border-style: solid;
+  margin-top: 10px;
+}
+
+#tipo{
+outline: none;
+font-family: Roboto, Arial, sans-serif;
+font-size: 16px;
+color: rgb(145, 145, 145);
+}
+
+#numero, #nombreciudad{
+width: calc(97.5% - 69px);
+height: 26px;
+margin: 10px 0 0 0;
+}
+
+::placeholder{
+  color: rgb(104, 104, 104);
+  font-size: 13px;
+}
+
+#descripcion{
+  width: calc(100% - 17px);
+  height: 46px;
+  margin: 10px 0 0 0;
+}
+
+h6{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #187cba;
+}
+
+textarea{
+  resize: none;
+  font-family: Roboto, Arial, sans-serif;
+
+}

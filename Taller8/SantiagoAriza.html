@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Trabajo MVC</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="Estilos.css">
+    <script src="https://kit.fontawesome.com/3a19cbda72.js" crossorigin="anonymous"></script>
+    <script src="Validaciones.js"></script>
+  </head>
+  <body>
+    <div class="main-block">
+      <h1><b>REGISTRATE</b></h1><br>
+      <form action="/" id="formulario" method="post">
+        <h6>* (Campo Obligatorio)</h6>
+        <label id="icon" for="name"><i class="fas fa-user"></i></label>
+        <input type="text" name="nombre" id="nombre" placeholder="Nombres *">
+        <label id="icon" for="name"><i class="fas fa-user-friends"></i></label>
+        <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos *"><br><br>
+        <fieldset id="caja1">
+          <legend><h3 id="tipo">Tipo de Documento</h3></legend>
+          Id
+          <select name="tipoid" id="id">
+            <option value="cedulaciudadania" selected>1 - CC</option>
+            <option value="pasaporte">2 - Pasaporte</option>
+            <option value="cedulaextranjeria">3 - Cédula de Extranjero</option>
+            <option value="tarjetaidentidad">4 - TI</option>
+            <option value="otra">5 - Otra</option>
+        </select><br>
+          Número *
+          <input type="text" id="numero" name="numero" value="">
+          <textarea name="comentario" id="descripcion" placeholder="Descripción (opcional)"></textarea></p>
+      </fieldset><br>
+        <label id="icon" for="name"><i class="fas fa-city"></i></label>
+        <input type="text" name="lugarnacimiento" id="lugarnacimiento" placeholder="LugarNacimiento *">
+        <label id="icon" for="name"><i class="fas fa-calendar-alt"></i></label>
+        <input type="text" name="fechanacimiento" id="fechanacimiento" placeholder="FechaNacimiento * - xx/xx/xxxx">
+        <fieldset id="caja2">
+          <legend><h3 id="tipo">Ciudad de Residencia</h3></legend>
+          Id - Departamento
+          <select name="ciudad" id="id">
+            <option value="arauca" selected>1 - Arauca</option>
+            <option value="armenia">2 - Amazonas</option>
+            <option value="barranquilla">3 - Bólivar</option>
+            <option value="bogota">4 - Caquetá</option>
+            <option value="otra">5 -Chocó</option>
+        </select><br>
+          Nombre *
+          <input type="text" id="nombreciudad" name="nombre" value="">
+          <textarea name="comentario" id="descripcion" placeholder="Descripción (opcional)"></textarea></p>
+      </fieldset><br>
+        <label id="icon" for="name"><i class="fas fa-envelope-square"></i></label>
+        <input type="text" name="email" id="email" placeholder="Email *">
+        <label id="icon" for="name"><i class="fas fa-mobile-alt"></i></label>
+        <input type="text" name="teléfono" id="teléfono" placeholder="Teléfono (opcional)"/>
+        <label id="icon" for="name"><i class="fas fa-user-circle"></i></label>
+        <input type="text" name="usuario" id="usuario" placeholder="Usuario *">
+        <label id="icon" for="name"><i class="fas fa-key"></i></label>
+        <input type="password" name="contraseña" id="contraseña" placeholder="Contraseña *">
+        <label id="icon" for="name"><i class="far fa-check-circle"></i></label>
+        <input type="password" name="confirmarcontraseña" id="confirmarcontraseña" placeholder="ConfirmarContraseña *"><br><br>
+        <div class="btn-block">          
+          <button type="submit" href="/">Enviar</button><br><br>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
