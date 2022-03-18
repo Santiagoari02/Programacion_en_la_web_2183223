@@ -1,0 +1,63 @@
+
+    {% include 'header.html' %}
+    <br>
+
+    <a href="{{url_for('create')}}" class="btn btn-success" style="margin-left: -110px ;">
+        Ingresar Nuevo estudiante
+    </a>
+    <br>
+    <br>
+
+
+    <table class="table table-light" style="margin-left: -110px;">
+        <thead class="thead-light">
+            <tr>
+                <th>ID</th>
+                <th>Nombres</th>
+                <th>Apellidos</th>
+                <th>Tipodocumento</th>
+                <th>NumDocumento</th>
+                <th>PaisResidencia</th>
+                <th>DptoResidencia</th>
+                <th>CiudadResidencia</th>
+                <th>FechaNacimiento</th>
+                <th>Email</th>
+                <th>Telefono</th>
+                <th>Usuario</th>
+                <th>Contraseña</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            {% for persona  in persona %}
+            <tr>
+                <td>{{persona[0]}}</td>
+                <td>{{persona[1]}}</td>
+                <td>{{persona[2]}}</td>
+                <td>{{persona[3]}}</td>
+                <td>{{persona[4]}}</td>
+                <td>{{persona[5]}}</td>
+                <td>{{persona[6]}}</td>
+                <td>{{persona[7]}}</td>
+                <td>{{persona[8]}}</td>
+                <td>{{persona[9]}}</td>
+                <td>{{persona[10]}}</td>
+                <td>{{persona[11]}}</td>
+                <td>{{persona[12]}}</td>
+               
+                <td> <a class="btn btn-warning" href="/edit/{{persona[0]}}">Editar</a> <br><br>
+                    
+                <a onclick="return confirm('¿Desea eliminar el registro del estudiante?')" class="btn btn-danger" href="/destroy/{{persona[0]}}">Eliminar</a>
+                </td>
+            </tr>
+            {% endfor %}
+
+        </tbody>
+    </table>
+{% include 'footer.html' %}
+
+
+
+
+     

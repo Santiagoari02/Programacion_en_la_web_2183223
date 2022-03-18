@@ -1,0 +1,88 @@
+
+{% include 'header.html' %}
+
+
+<form method="post" action="/store" enctype="multipart/form-data">
+    
+    <div class="card">
+        <div class="card-header" style="font-size: 25px;">
+            Ingresar Estudiante
+        </div>
+        <div class="card-body">
+            <h5 class="card-title" style="font-size: 20px;">Datos del Estudiante</h5>
+            <p class="card-text">
+
+                <div class="form-group">
+                    <label for="txtNombre">Nombres:</label>
+                    <input id="txtNombre" class="form-control" type="text" name="txtNombre">
+                </div>
+
+                <div class="form-group">
+                    <label for="txtApellidos">Apellidos:</label>
+                    <input id="txtApellidos" class="form-control" type="text" name="txtApellidos">
+                </div>
+                
+                <div class="form-group">
+                    <label for="txtTipodocumento">TipoDocumento:</label>
+                    <input id="txtTipodocumento" class="form-control" type="text" name="txtTipodocumento">
+                </div>
+                
+                <div class="form-group">
+                    <label for="numDocumento">NroDocumento:</label>
+                    <input id="numDocumento" class="form-control" type="number" name="numDocumento">
+                </div>
+
+                <div class="form-group">
+                    <label for="txtPais">PaisResidencia:</label>
+                    <input id="txtPais" class="form-control" type="text" name="txtPais">
+                </div>
+
+                <div class="form-group">
+                    <label for="txtDpto">DptoResidencia:</label>
+                    <input id="txtDpto" class="form-control" type="text" name="txtDpto">
+                </div>
+
+                <div class="form-group">
+                    <label for="txtCiudad">CiudadResidencia:</label>
+                    <input id="txtCiudad" class="form-control" type="text" name="txtCiudad">
+                </div>
+
+                <div class="form-group">
+                    <label for="dateFechanacimiento">FechaNacimiento:</label>
+                    <input id="dateFechanacimiento" class="form-control" type="date" name="dateFechanacimiento">
+                </div>
+
+                <div class="form-group">
+                    <label for="txtEmail">Email:</label>
+                    <input id="txtEmail" class="form-control" type="text" name="txtEmail">
+                </div>
+
+                <div class="form-group">
+                    <label for="txtTelefono">Telefono:</label>
+                    <input id="txtTelefono" class="form-control" type="text" name="txtTelefono">
+                </div>
+
+                <div class="form-group">
+                    <label for="txtUsuario">Usuario:</label>
+                    <input id="txtUsuario" class="form-control" type="text" name="txtUsuario">
+                </div>
+
+                <div class="form-group">
+                    <label for="txtContraseña">Contraseña:</label>
+                    <input id="txtContraseña" class="form-control" type="text" name="txtContraseña">
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" class="btn btn-success" value="Agregar Estudiante">
+                    <a href="{{url_for('index')}}" class="btn btn-primary">Volver</a>
+                </div>
+                
+            
+            </p>
+                
+        </div>
+    </div>
+
+
+</form><br>
+{% include 'footer.html' %}
