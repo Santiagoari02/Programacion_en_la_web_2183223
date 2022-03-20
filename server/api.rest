@@ -1,0 +1,26 @@
+###
+GET  http://localhost:4000/api/estudiantes
+
+###
+POST http://localhost:4000/api/estudiantes
+Content-Type: application/json
+
+{
+    "name": "Nicolas Ariza",
+    "semester": "3",
+    "career": "Ingeniería Industrial"
+}
+
+###
+GET http://localhost:4000/api/estudiantes/62366b637f01234308e7032f
+
+###
+DELETE http://localhost:4000/api/estudiantes/62366a8b3b63cdb0a5ce05c6
+
+###
+PUT http://localhost:4000/api/estudiantes/62366b637f01234308e7032f
+Content-Type: application/json
+
+{
+    "semester": 5
+}
